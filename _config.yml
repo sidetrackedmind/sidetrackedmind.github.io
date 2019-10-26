@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: sidetrackedmind
+title: data explorations
 email: ben.malnor@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   data explorations
@@ -57,18 +57,18 @@ plugins:
 
 author:
   name   : "Ben Malnor"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Passionately curious about data and maps"
+  avatar : "/assets/images/profile_photo.jpg"
+  bio    : "Curious about data and maps"
   links:
     - label: "Creative Website"
-      icon: "fas fa-fw fa-link"
+      icon: "/assets/images/sidetrackedmind_logo.png"
       url: "http://sidetrackedmind.com"
     - label: "Bus Project Website"
-      icon: "fas fa-fw fa-link"
+      icon: "/assets/images/bus_wtf_logo.png"
       url: "http://bus.wtf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/sidetrackedmind"
 
 footer:
   links:
