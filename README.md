@@ -1,2 +1,2 @@
-# sidetrackedmind.github.io
-My site
+## sidetrackedmind
+A site for exploring
