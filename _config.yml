@@ -57,14 +57,14 @@ plugins:
 
 author:
   name   : "Ben Malnor"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/profile_photo.jpg"
   bio    : "Passionately curious about data and maps"
   links:
     - label: "Creative Website"
-      icon: "fas fa-fw fa-link"
+      icon: "/assets/images/sidetrackedmind_logo.png"
       url: "http://sidetrackedmind.com"
     - label: "Bus Project Website"
-      icon: "fas fa-fw fa-link"
+      icon: "/assets/images/bus_wtf_logo.png"
       url: "http://bus.wtf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
