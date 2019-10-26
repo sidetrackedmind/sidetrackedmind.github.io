@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Ben Malnor"
   avatar : "/assets/images/profile_photo.jpg"
-  bio    : "Passionately curious about data and maps"
+  bio    : "Curious about data and maps"
   links:
     - label: "Creative Website"
       icon: "/assets/images/sidetrackedmind_logo.png"
