@@ -32,8 +32,8 @@ _ = single_city.apply(lambda x: ax.annotate(s=x['CITYNAME'],
 <br/>
 <table>
 <tr>
-  <td><img src="/assets/images/seattle_boundary_w_basemap.PNG" width=300></td>
-  <td><img src="/assets/images/seattle_boundary_no_basemap.PNG" width=300></td>
+  <td><img src="/assets/images/seattle_boundary_w_basemap.PNG" width=300/></td>
+  <td><img src="/assets/images/seattle_boundary_no_basemap.PNG" width=300/></td>
 </tr>
 <tr>
   <td><em>Seattle boundary with a basemap</em></td>
