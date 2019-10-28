@@ -37,9 +37,17 @@ _ = single_city.apply(lambda x: ax.annotate(s=x['CITYNAME'],
 </tr>
 <tr>
   <td><em>Seattle boundary with a basemap</em></td>
-  <td><em>Seattle boundary without a basemap</em></td>
+  <td><em>Seattle boundary without a basemap from geopandas</em></td>
 </tr>
 </table>
-One way to split up data is using a [geohash](https://en.wikipedia.org/wiki/Geohash). I think a really helpful website for understanding geohashing is this [interactive-geohash](https://www.movable-type.co.uk/scripts/geohash.html).
+One way to split up the Seattle polygon into rectangles is using a [geohash grid](https://en.wikipedia.org/wiki/Geohash). A helpful website for understanding the levels of geohashing is this [interactive-geohash](https://www.movable-type.co.uk/scripts/geohash.html).
+<br/>
 Here's a static image from that site of the earth broken down into geohashes: <br />
-<img src="/assets/images/geohash.jpg" width="350">
+<img src="/assets/images/geohash.jpg" width="350"><br/>
+As you can see from the image above, there are various levels, or scales of rectangle, created in order to cover the whole globe. Each rectangle grid can be broken into smaller rectangles. There's a ton of information on the wikipedia page about the specifics of making the grid and the geohash characters - but the important thing to know now is that using a python geohash library like 
+```python
+from geolib import geohash
+``` 
+you can choose a scale and create a rectangle grid that is <em>consistent</em>. Here's 
+<br/>
+<img src="/assets/images/seattle_geohash_zoom_in.PNG" width="350"><br/>
