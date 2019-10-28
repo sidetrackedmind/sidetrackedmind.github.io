@@ -38,6 +38,7 @@ _ = single_city.apply(lambda x: ax.annotate(s=x['CITYNAME'],
 <br/>
 One way to split up the Seattle polygon into rectangles is using a [geohash grid](https://en.wikipedia.org/wiki/Geohash). A helpful website for understanding the levels of geohashing is this [interactive-geohash](https://www.movable-type.co.uk/scripts/geohash.html).
 <br/>
+<br/>
 Here's a static image from that site of the earth broken down into geohashes: <br />
 <img src="/assets/images/geohash.jpg" width="350"><br/>
 As you can see from the image above, there are various levels, or scales of rectangle, created in order to cover the whole globe. Each rectangle grid can be broken into smaller rectangles. There's a ton of information on the wikipedia page about the specifics of making the grid and the geohash characters - but the important thing to know now is that using a python geohash library like 
