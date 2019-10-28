@@ -30,16 +30,13 @@ _ = single_city.apply(lambda x: ax.annotate(s=x['CITYNAME'],
                                                x.geometry.centroid.y), ha='center'),axis=1)
 ```
 <br/>
-<table>
-<tr>
-  <td><img src="/assets/images/seattle_boundary_w_basemap.PNG" width=300/></td>
-  <td><img src="/assets/images/seattle_boundary_no_basemap.PNG" width=300/></td>
-</tr>
-<tr>
-  <td><em>Seattle boundary with a basemap</em></td>
-  <td><em>Seattle boundary without a basemap from geopandas</em></td>
-</tr>
-</table>
+<p float="left">
+  <img src="/assets/images/seattle_boundary_w_basemap.PNG" width=300/>
+  <img src="/assets/images/seattle_boundary_no_basemap.PNG" width=300/>
+</p>
+<br/>
+<em>Seattle boundary with a basemap</em>
+<em>Seattle boundary without a basemap from geopandas</em>
 One way to split up the Seattle polygon into rectangles is using a [geohash grid](https://en.wikipedia.org/wiki/Geohash). A helpful website for understanding the levels of geohashing is this [interactive-geohash](https://www.movable-type.co.uk/scripts/geohash.html).
 <br/>
 Here's a static image from that site of the earth broken down into geohashes: <br />
