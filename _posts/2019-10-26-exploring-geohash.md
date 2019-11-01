@@ -50,7 +50,7 @@ you can choose a scale and create a rectangle grid that is <em>consistent</em>.
 <br/>
 <img src="/assets/images/seattle_geohash_zoom_in.PNG" width="350"><br/>
 <br/>
-In the picture above, the `` geohash will <em>always</em> be at that location with those boundary coordinates. There are other ways to chop up polygons in python, for instance:
+In the picture above, the `` geohash will <em>always</em> be at that location with those boundary coordinates. There are other ways to chop up polygons in python, for instance:<br/>
 ```python
 # make the geometry a multipolygon if it's not already
 geometry = single_city['geometry'].iloc[0]
