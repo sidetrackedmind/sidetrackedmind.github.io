@@ -41,10 +41,31 @@ One way to split up the Seattle polygon into rectangles is using a [geohash grid
 <br/>
 Here's a static image from that site of the earth broken down into geohashes: <br />
 <img src="/assets/images/geohash.jpg" width="350"><br/>
-As you can see from the image above, there are various levels, or scales of rectangle, created in order to cover the whole globe. Each rectangle grid can be broken into smaller rectangles. There's a ton of information on the wikipedia page about the specifics of making the grid and the geohash characters - but the important thing to know now is that using a python geohash library like 
+As you can see from the image above, there are various levels, or scales of rectangle, created in order to cover the whole globe. Each rectangle grid can be broken into smaller rectangles. There's a ton of information on the wikipedia page about the specifics of making the grid and the geohash characters. The benefits I want to call out are the following:
+- consistency
+- easy grouping without point-in-polygon function
+<br/>
+First, let's talk consistency. Using the python geohash library like 
 ```python
 from geolib import geohash
 ``` 
-you can choose a scale and create a rectangle grid that is <em>consistent</em>. Here's 
+you can choose a scale and create a rectangle grid that is <em>consistent</em>. 
 <br/>
 <img src="/assets/images/seattle_geohash_zoom_in.PNG" width="350"><br/>
+<br/>
+In the picture above, the `` geohash will <em>always</em> be at that location with those boundary coordinates. There are other ways to chop up polygons in python, for instance:
+```python
+# make the geometry a multipolygon if it's not already
+geometry = single_city['geometry'].iloc[0]
+if isinstance(geometry, Polygon):
+    geometry = MultiPolygon([geometry])
+geometry_cut = ox.quadrat_cut_geometry(geometry, quadrat_width=0.01)
+seattle_cut = gpd.GeoDataFrame(crs={'init':'4326'}
+                 ,geometry=[geom for geom in geometry_cut.geoms])
+```
+<br/>
+<img src="/assets/images/polygon_cut_grid.png" width="350"><br/>
+<br/>
+
+
+If you chop up other data, you can <em>align</em> or <em>group</em> the datasets by geohash rectangles.   
