@@ -39,8 +39,10 @@ One way to split up the Seattle polygon into rectangles is using a [geohash grid
 Here's a static image from that site of the earth broken down into geohashes: <br />
 <img src="/assets/images/geohash.jpg" width="350"><br/>
 As you can see from the image above, there are various levels, or scales of rectangle, created in order to cover the whole globe. Each rectangle grid can be broken into smaller rectangles. There's a ton of information on the wikipedia page about the specifics of making the grid and the geohash characters. The benefits I want to call out are the following:
-- consistency
-- easy grouping without point-in-polygon function
+<ul>
+<li>consistency</li>
+<li>easy grouping without point-in-polygon function</li>
+</ul>
 <br/>
 First, let's talk consistency. Using the python geohash library like 
 ```python
