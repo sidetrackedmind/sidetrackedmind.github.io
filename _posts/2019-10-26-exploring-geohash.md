@@ -44,6 +44,7 @@ As you can see from the image above, there are various levels, or scales of rect
 <li>not a spatial operation (i.e. it's not a point-in-polygon function)</li>
 </ul>
 <br/>
+
 ## Consistency
 First, let's talk consistency. Using the python geohash library like 
 ```python
@@ -57,6 +58,7 @@ Any latitude and longitude that falls into the geohash rectangles bounding box w
 <br/>
 You can create the grid another way. Instead of using geohash rectangles, you can break the Seattle polygon into pieces. The below code snippet breaks the Seattle polygon into `quadrat_width=0.01` which is ~1000 m in ESPG:4326 (aka WGS84, which has units in degrees).
 <br/>
+
 ```python
 # make the geometry a multipolygon if it's not already
 geometry = single_city['geometry'].iloc[0]
@@ -71,6 +73,7 @@ The code above creates the grid below. This image is created by just plotting `s
 <img src="/assets/images/polygon_cut_grid.png" width="350"><br/>
 <br/>
 You can see that the grid seems similar to geohashing rectangles and it has the benefit of being very customized for your polygon or area of interest (you'll notice that the geohash grid is slightly "tilted")**. The customization comes at the cost of losing consistency. Let's say King County decides to modify the shape of the Seattle city boundary polygon. If that happens, your polygon cut grid will be slightly different. Or if you decide to stick with the original grid, so that you can compare previous analysis, you may mis-represent areas when you aggregate or group results.<br/>
+
 ## Not Spatial
 ```python
 geohash = geohash.encode(latitude, longitude, precision=6)
