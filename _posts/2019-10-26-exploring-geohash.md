@@ -29,11 +29,8 @@ _ = single_city.apply(lambda x: ax.annotate(s=x['CITYNAME'],
                                            xy=(x.geometry.centroid.x, 
                                                x.geometry.centroid.y), ha='center'),axis=1)
 ```
+![w_basemap](/assets/images/seattle_boundary_w_basemap.PNG) ![wo_basemap](/assets/images/seattle_boundary_no_basemap.PNG)
 <br/>
-<p float="left">
-  <img src="/assets/images/seattle_boundary_w_basemap.PNG" width=300/>
-  <img src="/assets/images/seattle_boundary_no_basemap.PNG" width=300/>
-</p>
 <em>Above (left) Seattle boundary with a basemap and (right) Seattle boundary without a basemap from geopandas</em>
 <br/>
 <br/>
