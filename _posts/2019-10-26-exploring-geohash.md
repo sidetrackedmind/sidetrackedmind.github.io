@@ -140,7 +140,7 @@ One subtle benefit of using a geohash libary is that you can perform `point-in-p
 You can find the geohash of each record, given the `latitude` and `longitude` columns. 
 
 ### housing_sales_w_geohash
-<table style="width:50%">
+<table style="width:60%">
   <tr>
     <th>property_id</th>
     <th>address</th>
@@ -160,7 +160,7 @@ You can find the geohash of each record, given the `latitude` and `longitude` co
 </table>
 
 ### schools_w_geohash
-<table style="width:50%">
+<table style="width:60%">
   <tr>
     <th>school_id</th>
     <th>address</th>
