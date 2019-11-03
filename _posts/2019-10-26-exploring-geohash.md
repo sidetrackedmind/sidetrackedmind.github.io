@@ -6,7 +6,7 @@ categories:
 tags:
   - spatial
 ---
-## Problem Statement
+## Introduction - Why Tiling?
 Let's say we have data spread throughout Seattle (e.g. housing sales, school grades or ratings, number of restaurants, etc). We want to aggregate that data into easier to understand pieces. Let's say you started with a polygon outlining the City of Seattle (KC data source). Below are two version of the Seattle outline. One is a screenshot of the raw file in QGIS, the other is a geopandas plot using the following:
 ```python
 city_df = gpd.read_file("/python_r_comp/admin_SHP/admin/city.shp")
