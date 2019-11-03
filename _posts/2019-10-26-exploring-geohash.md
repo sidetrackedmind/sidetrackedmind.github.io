@@ -102,26 +102,82 @@ You can see that the grid seems similar to geohashing rectangles and it has the 
 ## Not Spatial
 One subtle benefit of using a geohash libary is that you can perform `point-in-polygon`-like operations without converting your `latitude` and `longitude` values into discrete `Point` geometries. Let's say you had two tables: housing_sales, and schools.<br/>
 ### housing_sales
-| property_id | address | latitude | longitude | sale_price |
-| ----------- | ------- | -------- | --------- | ---------- |
-| 544381      | 123 fun lane | 47.642211 | -122.376708 | 1200000 |
+ <table style="width:50%">
+  <tr>
+    <th>property_id</th>
+    <th>address</th>
+    <th>latitude</th>
+    <th>longitude</th>
+    <th>sale_price</th>
+  </tr>
+  <tr>
+    <td>544381</td>
+    <td>123 fun lane</td>
+    <td>47.642211</td>
+    <td>-122.376708</td>
+    <td>1200000</td>
+  </tr>
+</table>
 
 ### schools
-| school_id | address | latitude | longitude | school_grade |
-| ----------- | ------- | -------- | --------- | ---------- |
-| 54      | 55 learning way | 47.645121 | -122.376223 | 87 |
+<table style="width:50%">
+  <tr>
+    <th>school_id</th>
+    <th>address</th>
+    <th>latitude</th>
+    <th>longitude</th>
+    <th>school_grade</th>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>55 learning way</td>
+    <td>47.645121</td>
+    <td>-122.376223</td>
+    <td>87</td>
+  </tr>
+</table>
 
 You can find the geohash of each record, given the `latitude` and `longitude` columns. 
 
 ### housing_sales_w_geohash
-| property_id | address | latitude | longitude | sale_price | geohash_id |
-| ----------- | ------- | -------- | --------- | ---------- | ---------- |
-| 544381      | 123 fun lane | 47.642211 | -122.376708 | 1200000 | c22zp3 |
+<table style="width:50%">
+  <tr>
+    <th>property_id</th>
+    <th>address</th>
+    <th>latitude</th>
+    <th>longitude</th>
+    <th>sale_price</th>
+    <th>geohash_id</th>
+  </tr>
+  <tr>
+    <td>544381</td>
+    <td>123 fun lane</td>
+    <td>47.642211</td>
+    <td>-122.376708</td>
+    <td>1200000</td>
+    <td>c22zp3</td>
+  </tr>
+</table>
 
 ### schools_w_geohash
-| school_id | address | latitude | longitude | school_grade | geohash_id |
-| ----------- | ------- | -------- | --------- | ---------- | ---------- |
-| 54      | 55 learning way | 47.645121 | -122.376223 | 87 | c22zp3 |
+<table style="width:50%">
+  <tr>
+    <th>school_id</th>
+    <th>address</th>
+    <th>latitude</th>
+    <th>longitude</th>
+    <th>school_grade</th>
+    <th>geohash_id</th>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>55 learning way</td>
+    <td>47.645121</td>
+    <td>-122.376223</td>
+    <td>87</td>
+    <td>c22zp3</td>
+  </tr>
+</table>
 
 The above is a fictious example but you get the idea. Once you have a `geohash_id` column in each table, you can quickly summarize housing sales within each schools `geohash_grid`, or find the school(s) in a particular property's `geohash_grid`. The method comes with limitations. For instance, a property could be on the edge of one geohash_grid and a school could be on the other side of that edge in another grid. We would miss that school even though, spatially, it's very close. That issue, leads us naturally to the need to create `relationships` on the grid in order to calculate a grid's neighbor. We'll explore `neighbor` analysis in another post.
 
