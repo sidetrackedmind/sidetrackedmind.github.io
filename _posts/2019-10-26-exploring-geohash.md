@@ -80,6 +80,9 @@ Once you pick a scale the geohash rectangle grid will be <em>consistent</em> no 
 <br/>
 Any latitude and longitude that falls into the geohash rectangles bounding box will <em>always</em> be encoded with the geohash `c22zp3` at precision=6.
 <br/>
+Here's a picture of the geohash grid on top of the Seattle boundary polygon (below).<br/>
+![seattle_full_geohash_grid](/assets/images/seattle_full_geohash_grid.png)
+<br/>
 To illustrate the importance of the <em>consistency</em> with a geohash grid. I'll show you another way to create a grid. Instead of using geohash rectangles, you can break the Seattle polygon into pieces using `open street map` Python library's function `quadrant_cut_geometry` (h.t. blob reference for showing me this option). The below code snippet breaks the Seattle polygon into `quadrat_width=0.01` which is ~1000 m in ESPG:4326 (aka WGS84, which has units in degrees).
 <br/>
 
