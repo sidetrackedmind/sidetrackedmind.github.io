@@ -100,7 +100,7 @@ The image below is created by just plotting `seattle_cut`: ```seattle_cut.plot()
 <br/>
 <img src="/assets/images/polygon_cut_grid.png" width="350"><br/>
 <br/>
-You can see that the grid seems similar to geohashing rectangles and it has the benefit of being very customized for your polygon or area of interest. The customization comes at the cost of losing consistency. Similar to neighborhoods, let's say King County decides to modify the shape of the Seattle city boundary polygon. If that happens, the resultant polygon cut grid will be different. Or if you decide to stick with the original grid, to compare a previous year's analysis, you may mis-represent areas when you aggregate or group results.<br/>
+You can see that the grid seems similar to geohashing rectangles and it has the benefit of being very customized for your polygon or area of interest. The customization comes at the cost of consistency and it can have some buggy effects near the corners (as you can see in the picture above). Similar to neighborhoods, let's say King County decides to modify the shape of the Seattle city boundary polygon. If that happens, the resultant polygon cut grid will be different. Or if you decide to stick with the original grid, to compare a previous year's analysis, you may mis-represent areas when you aggregate or group results.<br/>
 
 ## Not Spatial
 One subtle benefit of using a geohash libary is that you can perform `point-in-polygon`-like operations without converting your `latitude` and `longitude` values into discrete `Point` geometries. Let's say you had two tables: housing_sales, and schools.<br/>
