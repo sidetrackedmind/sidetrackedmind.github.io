@@ -1,7 +1,6 @@
 ---
 permalink: /cards/
 title: "Cards"
----
 gallery:
   - url: /assets/images/25th+bday+-+more+please.png
     image_path: /assets/images/25th+bday+-+more+please.png
@@ -12,4 +11,5 @@ gallery:
     alt: "Picture of person standing in front of a bus with their hands up."
     title: "And then it hit me - I love you"
 ---
+
 {% include gallery caption="This is a sample gallery with **Markdown support**." %}
