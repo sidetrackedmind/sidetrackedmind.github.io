@@ -9,3 +9,5 @@ main:
     url: /about/
   - title: "Cards"
     url: /cards/
+  - title: "Cartoons"
+    url: /cartoons/
