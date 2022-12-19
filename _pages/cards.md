@@ -1,5 +1,6 @@
-title: "Title of my page"
-date: 2021-08-10
+---
+permalink: /cards/
+title: "Cards"
 ---
 gallery:
   - url: /assets/images/25th+bday+-+more+please.png
