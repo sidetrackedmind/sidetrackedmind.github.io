@@ -1,6 +1,6 @@
 ---
 permalink: /cartoon/
-title: "Cartoons and Graphics"
+title: "Cartoons"
 gallery:
   - url: /assets/images/cartoon_graphics/church+van.png
     image_path: /assets/images/cartoon_graphics/church+van.png
