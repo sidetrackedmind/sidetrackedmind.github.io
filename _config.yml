@@ -60,9 +60,6 @@ author:
   avatar : "/assets/images/profile_photo.jpg"
   bio    : "Curious about data and maps"
   links:
-    - label: "Creative Website"
-      icon: "/assets/images/sidetrackedmind_logo.png"
-      url: "http://sidetrackedmind.com"
     - label: "Bus Project Website"
       icon: "/assets/images/bus_wtf_logo.png"
       url: "http://bus.wtf"
