@@ -84,8 +84,6 @@ gallery:
   url: ./assets/images/card_images/Cookies+in+Christmas.png
 - image_path: ./assets/images/card_images/Getting+popular.png
   url: ./assets/images/card_images/Getting+popular.png
-- image_path: ./assets/images/card_images/bathroom+shoes.png
-  url: ./assets/images/card_images/bathroom+shoes.png
 - image_path: ./assets/images/card_images/missing+you-website_Page_1.png
   url: ./assets/images/card_images/missing+you-website_Page_1.png
 - image_path: ./assets/images/card_images/Baby+sins.png
