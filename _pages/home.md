@@ -2,6 +2,7 @@
 layout: splash
 permalink: /
 hidden: true
+title: Sidetracked
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/sidetrackedmind_logo_header.png
