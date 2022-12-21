@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: data explorations
 email: ben.malnor@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  data explorations
+# description: >- # this means to ignore newlines until "baseurl:"
+#   data explorations
 #twitter_username: username
 github_username: sidetrackedmind
 minimal_mistakes_skin: default

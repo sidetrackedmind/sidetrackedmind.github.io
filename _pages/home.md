@@ -5,8 +5,6 @@ hidden: true
 header:
   overlay_color: "#5e616c"
   overlay_image: assets/images/SM+logo+-+website-04.png
-excerpt: >
-  Welcome to Ben Meysohn's website. A little bit of everything. Cards, cartoons, and technical blog.
 feature_row:
   - image_path: /assets/images/card_images/sorry+so+slow.png
     alt: "cards"
