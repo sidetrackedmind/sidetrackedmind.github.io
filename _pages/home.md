@@ -3,9 +3,6 @@ layout: splash
 permalink: /
 hidden: true
 title: " "
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/sidetrackedmind_logo_header.png
 feature_row:
   - image_path: /assets/images/sorry+so+slow-cropped.png
     alt: "cards"
