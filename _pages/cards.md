@@ -28,8 +28,6 @@ gallery:
   url: ./assets/images/card_images/Tumblr+-brain+on+kids-01.png
 - image_path: ./assets/images/card_images/etch-a-sketch-03.png
   url: ./assets/images/card_images/etch-a-sketch-03.png
-- image_path: ./assets/images/card_images/Boy+who+cried+wolf.png
-  url: ./assets/images/card_images/Boy+who+cried+wolf.png
 - image_path: ./assets/images/card_images/Be+cool+snowpeople.png
   url: ./assets/images/card_images/Be+cool+snowpeople.png
 - image_path: ./assets/images/card_images/SuperHeroes-website_Page_1.png
