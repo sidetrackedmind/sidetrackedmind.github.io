@@ -9,3 +9,5 @@ main:
     url: /blog/
   - title: "About"
     url: /about/
+  - title: "Trip Game"
+    url: https://d1tu6vkegvnwyd.cloudfront.net/trimet_trip_game.html
